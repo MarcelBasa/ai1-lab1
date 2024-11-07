@@ -1,29 +1,17 @@
-<html>
+<!doctype html>
+<html lang="">
 <head>
     <meta charset="UTF-8">
-    <title>Maps with Leaflet</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
-    <script src="leaflet-1.7.1/leaflet-src.js"></script>
-    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
-    <script src="leaflet-1.7.1/leaflet-image.js"></script>
-
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pogodynka</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-<div id="map"></div>
-
-<button id="getLocation" onclick="getLocation()">Moja lokalizacja</button>
-<button id="saveButton">Pobierz mapę</button>
-
-<div id="main-drag-target"></div>
-
-<br>
+    <input type="text" id="adresInput" placeholder="Adres" value ="Szczecin"/>
+    <input type="button" id="pogodaButton" value="Pogoda"/>
+    <div id="pogoda"></div>
+<script src="index.js"></script>
 </body>
-
-<script src="script.js"></script>
 </html>
